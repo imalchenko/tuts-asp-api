@@ -20,7 +20,7 @@ namespace api.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "Hey there, you've entered: " + id.ToString();
+            return "value";
         }
 
         // POST api/values
