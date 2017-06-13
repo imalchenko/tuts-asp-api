@@ -14,7 +14,7 @@ phases:
   pre_build:
     commands:
       # - command
-      - $(aws ecr get-login --region $AWS_DEFAULT_REGION)
+      - $(aws ecr get-login --region us-west-2)
       - ls
   build:
     commands:
