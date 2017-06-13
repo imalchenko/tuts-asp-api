@@ -6,9 +6,9 @@ version: 0.2
     # key: "value"
             
 phases:
-  # install:
-    # commands:
-      # - command
+  install:
+    commands:
+      - sudo apt-get update && apt-get upgrade
       # - command
   # pre_build:
     # commands:
