@@ -6,15 +6,16 @@ version: 0.2
     # key: "value"
             
 phases:
-  install:
-    commands:
-      - apt-get update -y
-      - apt-get install -y docker
-      # - command
-  # pre_build:
+  # install:
     # commands:
+      # - apt-get update -y
+      # - apt-get install -y docker
+      # - command
+  pre_build:
+    commands:
       # - command
       # - command
+      - ls
   build:
     commands:
       - echo Building before docker run
