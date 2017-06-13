@@ -16,9 +16,9 @@ phases:
       # - command
   build:
     commands:
-      - echo build: before docker run
+      - echo Building before docker run
       - docker run -it -v $(PWD):/app --workdir /app 689765778194.dkr.ecr.us-west-2.amazonaws.com/aspnetcore-build:latest bash -c "dotnet restore && dotnet publish -c Release -o ./bin/Release/PublishOutput"
-      - echo build: after docker run
+      - echo Building after docker run
   # post_build:
     # commands:
       # - command
